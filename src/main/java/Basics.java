@@ -101,7 +101,7 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for (int i = 10; i > 0; i--){
+        for (int i = 10; i >= 0; i--){
             System.out.println("Current count: " + i);
         }
 
@@ -178,8 +178,8 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-        for (int i = 1; i < arr.length / 2; i++){
-            current_sum += arr[i * 2];
+        for(int i = 1; i < arr.length; i+=2){
+            current_sum += arr[i];
         }
 
         return current_sum;
